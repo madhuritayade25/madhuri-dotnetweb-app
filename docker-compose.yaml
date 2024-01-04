@@ -4,6 +4,8 @@ services: # apps containers you want to build and run
     image: madhuridotnetimg:v1  # image i want to build
     build: .  # path of dockerfile location -- . means current
     container_name: madhuric1 # it will create container also
+    ports:
+    - 1144:5000 
   madhuriapp2: # creating httpd image and container
     image: madhurihttpd:version1
     build:
