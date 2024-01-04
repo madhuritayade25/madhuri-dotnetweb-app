@@ -10,5 +10,6 @@ WORKDIR /madhuriapp
 # we are changing directory like cd command in linux / windows
 RUN dotnet build -o madhuribin
 # we are building / compiling dotnet sample app
-CMD ./madhuribin/ashu-webapp  --urls=http://0.0.0.0:5000
+RUN dotnet publish -o madhuri_publish -p:AssemblyName=madhuridotnet
+CMD ./madhuri_publish/madhuridotnet  --urls=http://0.0.0.0:5000
 # must be the final keyword of dockerfile which will run your app
