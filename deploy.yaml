@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ashunodeapp1
+  name: ashunodeapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ashunodeapp1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ashunodeapp1
+    spec:
+      containers:
+      - image: dockerashu/ashudotnetapp:version10
+        name: ashudotnetapp
+        resources: {}
+status: {}
