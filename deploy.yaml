@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashunodeapp1
-  name: ashunodeapp1
+    app: madhurinodeapp1
+  name: madhurinodeapp1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ashunodeapp1
+      app: madhurinodeapp1
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashunodeapp1
+        app: madhurinodeapp1
     spec:
       containers:
-      - image: dockerashu/ashudotnetapp:version10
-        name: ashudotnetapp
+      - image: madhuridoch/madhuridotnetapp:version10
+        name: madhuridotnetapp
         resources: {}
 status: {}
